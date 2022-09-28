@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Contact Form</title>
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Contact Form</h1>
+      <p>Please Sign-up!</p>
+
+    </header>
+    <form action="./thanks.html" netlify method="post">
+
+
+    <!-- 
+            OBJECTIVE:
+
+            Add a simple contactform that collects user information
+            and user interests. Submit the form to Netlify
+            for processing.
+         -->
+
+    <fieldset>
+      <legend>User information</legend>
+
+      <p>
+        <label for="firstName">First Name</label><br>
+        <input type="text" name="firstName" id="firstName" required>
+      </p>
+
+      <p>
+        <label for="lastName">Last Name</label><br>
+        <input type="text" name="lastName" id="lastName" required>
+      </p>
+
+      <p>
+        <label for="Emailid">Email Id</label><br>
+        <input type="text" name="Emailid" id="Emailid" placeholder="herman.munster@mockingbirdland.com" required />
+      </p>
+
+      <p>
+        <label for="Phone">Phone</label><br>
+        <input type="tel" name="Phone" id="Phone" placeholder="1 (555) 555-5555" >
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Interests</legend>
+
+      <p>
+        Check all the apply
+      </p>
+
+      <label for="Query">Query:</label>
+      
+      <select name="query" id="query" required>
+        <option>Select a Query</option>
+        <option value="General Query">General Query</option>
+        <option value="Business Proposal">Business Proposal</option>
+        <option value="Complaint">Complaint</option>
+      </select>
+     
+    </fieldset>
+    <fieldset>
+
+      <p>
+        <label for="Message"> Message</label>
+
+        <textarea  name="Message"  id="Message" rows="15" cols="50"  required></textarea>
+      </p>
+
+    </fieldset>
+
+    <p>
+      <button type="submit">submit</button>
+
+    </p>
+  </form>
+</main>
+</body>
+
+</html>
